@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Curry Darbaar</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body.contact-page {
+      background: url('images/contact_indian.jpg') no-repeat center center/cover;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      max-width: 800px;
+      margin: 80px auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    }
+
+    .contact-info {
+      margin-bottom: 30px;
+    }
+
+    .contact-info h1 {
+      font-size: 2rem;
+      color: #f2c94c;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+
+    .contact-form h2 {
+      color: #f2c94c;
+      margin-bottom: 20px;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      background-color: #222;
+      border: 1px solid #444;
+      color: #fff;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background-color: #f2c94c;
+      color: #000;
+      border: none;
+      padding: 12px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #e0b83b;
+    }
+
+    nav a.active {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body class="contact-page">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="admin.html">Team</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="contact-container">
+    <div class="contact-info">
+      <h1>Contact <span style="color: #f2c94c;">Curry Darbaar</span></h1>
+      <p>📍 88 Royal Spice Road, Chennai, India - 636001</p>
+      <p>📞 +91 98765 43210</p>
+      <p>✉️ hello@currydarbaar.in</p>
+    </div>
+
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
